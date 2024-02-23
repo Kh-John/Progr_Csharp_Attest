@@ -19,7 +19,10 @@ class Program
         if (M > N)
             return;
 
-        Console.WriteLine(M);
+        Console.Write(M);
+
+        if (M < N)
+            Console.Write(", ");
         PrintNaturalNumbers(M + 1, N);
     }
 }
